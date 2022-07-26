@@ -133,8 +133,8 @@ signal_data_wide
 
 # edit exposure and outcome values for shorter expressions
 # they now take form: "ExOy" = `Exposure <x> Outcome <y>` where
-# <x> = "p" (positive) if exposure == "rituximab", "n" (negative) otherwise
-# <y> = "p" (positive) if outcome == "PG", "n" (negative) otherwise
+# <x> = "p" (positive) if exposure == "vedol", "n" (negative) otherwise
+# <y> = "p" (positive) if outcome == "panc", "n" (negative) otherwise
 colnames(signal_data_wide) <- gsub("\\[vedol\\]", "[E]", colnames(signal_data_wide))
 colnames(signal_data_wide) <- gsub("\\[panc\\]", "[O]", colnames(signal_data_wide))
 colnames(signal_data_wide) <- gsub("not \\[([EO])\\]", "[\\1]n", colnames(signal_data_wide))
